@@ -10,10 +10,20 @@ async (page) => {
         const header = document.querySelector('header').getBoundingClientRect();
         const content = document.querySelector('.hero-inner').getBoundingClientRect();
         const hero = document.querySelector('.hero').getBoundingClientRect();
-        return { topGap: content.top - header.bottom, bottomGap: hero.bottom - content.bottom };
+        const heading = document.querySelector('.hero h1');
+        const buttons = document.querySelector('.hero-actions').getBoundingClientRect();
+        return {
+          topGap: content.top - header.bottom,
+          bottomGap: hero.bottom - content.bottom,
+          headlineLines: heading.getBoundingClientRect().height / parseFloat(getComputedStyle(heading).lineHeight),
+          buttonClearance: innerHeight - buttons.bottom,
+        };
       });
       if (spacing.topGap < 24 || spacing.bottomGap < 64) {
         throw new Error(`Hero overlaps its header or outgrows its background at ${width}×${height} (${font}): ${JSON.stringify(spacing)}`);
+      }
+      if (width >= 1024 && (spacing.headlineLines > 2.1 || spacing.buttonClearance < 24)) {
+        throw new Error(`Desktop headline or buttons exceed the available space at ${width}×${height} (${font}): ${JSON.stringify(spacing)}`);
       }
       results.push({ width, height, font, ...spacing });
     }

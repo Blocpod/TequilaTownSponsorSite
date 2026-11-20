@@ -4,7 +4,7 @@ Standalone static sponsorship site, served from `dist` (see `vercel.json`).
 
 Preview locally: `python3 -m http.server 8765 --directory dist`.
 
-The hero grows with its content so wrapped headlines stay below the header. With the preview open in Playwright CLI, run the viewport and fallback-font spacing check with `playwright-cli run-code "$(cat tests/hero-spacing.js)"`.
+The hero grows with its content so wrapped headlines stay below the header. Desktop typography fits two lines and keeps both buttons visible on shorter laptop screens. With the preview open in Playwright CLI, run the viewport and fallback-font spacing check with `playwright-cli run-code "$(cat tests/hero-spacing.js)"`.
 
 ## Partnership questionnaire
 
