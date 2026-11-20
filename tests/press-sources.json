@@ -1,0 +1,26 @@
+{
+  "logos": "Existing horizontal wordmark (tequila-town.svg / logo-h.svg)",
+  "fonts": "Existing TequilaTownWebsite/assets/fonts",
+  "photos": [
+    {
+      "file": "la-rojena-bar",
+      "source_name": "00009TT Space.png",
+      "drive_id": "1AohjrHPgA_tuP7HfX-G8muoUmOHSCmxQ"
+    },
+    {
+      "file": "express-courtyard",
+      "source_name": "Train Boarding.png",
+      "drive_id": "1I2ZZC_6jFo3odKjKZsJnZKAc36zsszmt"
+    },
+    {
+      "file": "cristalino-cantina",
+      "source_name": "00047TT Space.png",
+      "drive_id": "1_YVB8Z_GyfNfcKq6McdKc-pjcurQDQG-"
+    },
+    {
+      "file": "hacienda-bar",
+      "source_name": "00033TT Space.png",
+      "drive_id": "1_lAQbNaDcHTaz69NpWNQSpfVzL__eSk-"
+    }
+  ]
+}

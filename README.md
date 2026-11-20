@@ -23,3 +23,9 @@ Source matching checked November 20, 2026. Exceptions are labeled on the page:
 - Online originals for the Aventura Magazine, Stroll Magazine and Doral Tribune print clippings could not be verified. “View print clipping” opens page 8 of the existing sponsorship deck, where all four print features appear. Replace those destinations if publisher originals become available.
 
 Publisher subscriptions, consent prompts and video availability remain controlled by the publishers. Social screenshots remain recap evidence; no unverified post URLs were added.
+
+## Press pack
+
+`press.html` is a separate, static press page linked only from the homepage footer. It follows this site’s typography, colors and layout conventions. It needs no JavaScript or service. `assets/press/` contains the complete ZIP and individual logos (SVG and transparent PNG), existing brand fonts with copyright notices, four venue JPEGs, a fact sheet and website palette. Photographs are exported from the original venue assets supplied for the Studios gallery; the dark logo is a color variant of the existing white wordmark. Source asset IDs are retained in `tests/press-sources.json`.
+
+Check page links, footer placement and ZIP contents with `python3 tests/check-press.py`. Preview `press.html` with the usual local server. Update the files and ZIP together when the brand pack changes.

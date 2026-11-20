@@ -1,0 +1,10 @@
+TEQUILA TOWN — WEBSITE PALETTE
+
+Cream #F3E6C8
+Paper #E9DCBF
+Gold #FFCE64
+Clay #AE3D00
+Forest #0F251A
+Ink #24170E
+
+Colors taken from the existing Tequila Town Miami website.
