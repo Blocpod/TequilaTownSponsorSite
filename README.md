@@ -4,6 +4,12 @@ Standalone static sponsorship site, served from `dist` (see `vercel.json`).
 
 Preview locally: `python3 -m http.server 8765 --directory dist`.
 
+## Partnership questionnaire
+
+The two partnership CTAs open a native dialog. Required contact and qualification answers are formatted into an email draft addressed to `hi@tequila.town`; optional website/social and idea fields can be left blank. The visitor reviews and sends the email from their own mail app. A copyable draft is available if the mail app does not open. Closing and reopening the form preserves answers until the page is refreshed; the site does not store or submit them to a server.
+
+No service or dependencies are needed. With JavaScript disabled, the CTAs keep their original direct email behavior. Check email formatting with `node --test tests/partnership-email.test.mjs`.
+
 ## Coverage links
 
 Coverage cards in `dist/index.html` link to the matched article or broadcast segment and open in a new tab. Their images, captions and action labels share one native link, including keyboard focus.
