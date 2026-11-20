@@ -4,6 +4,8 @@ Standalone static sponsorship site, served from `dist` (see `vercel.json`).
 
 Preview locally: `python3 -m http.server 8765 --directory dist`.
 
+The hero grows with its content so wrapped headlines stay below the header. With the preview open in Playwright CLI, run the viewport and fallback-font spacing check with `playwright-cli run-code "$(cat tests/hero-spacing.js)"`.
+
 ## Partnership questionnaire
 
 The two partnership CTAs open a native dialog. Required contact and qualification answers are formatted into an email draft addressed to `hi@tequila.town`; optional website/social and idea fields can be left blank. The visitor reviews and sends the email from their own mail app. A copyable draft is available if the mail app does not open. Closing and reopening the form preserves answers until the page is refreshed; the site does not store or submit them to a server.
